@@ -5,16 +5,15 @@ public class Cliente {
     private String apellido;
     private String cedula;
     private int edad;
-    PrestamoUq ownedByPrestamoUq;
-
-    public Cliente() {
-    }
-
+    PrestamoUq owedByPrestamoUq;
     public Cliente(String nombre, String apellido, String cedula, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.edad = edad;
+    }
+
+    public Cliente() {
     }
 
     public String getNombre() {
@@ -49,21 +48,21 @@ public class Cliente {
         this.edad = edad;
     }
 
-    public PrestamoUq getOwnedByPrestamoUq() {
-        return ownedByPrestamoUq;
+    public PrestamoUq getOwedByPrestamoUq() {
+        return owedByPrestamoUq;
     }
 
-    public void setOwnedByPrestamoUq(PrestamoUq ownedByPrestamoUq) {
-        this.ownedByPrestamoUq = ownedByPrestamoUq;
+    public void setOwedByPrestamoUq(PrestamoUq owedByPrestamoUq) {
+        this.owedByPrestamoUq = owedByPrestamoUq;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", cedula='" + cedula + '\'' +
-                ", edad=" + edad +
+                "nombre = '" + nombre + '\'' +
+                ", apellido = '" + apellido + '\'' +
+                ", cedula = '" + cedula + '\'' +
+                ", edad = " + edad +
                 '}';
     }
 }
