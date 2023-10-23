@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PrestamoUq prestamoUq= inicializarDatosPrueba();
+        PrestamoUq prestamoUq = inicializarDatosPrueba();
 
         //CRUD
 
